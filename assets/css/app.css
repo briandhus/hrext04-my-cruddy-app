@@ -1,3 +1,19 @@
 body {
 	background-image: url('../images/background-pattern.png');
 }
+
+.container {
+	width: 80%;
+	height: 90%;
+	border: solid 1px grey;
+	margin: 40px auto;
+	/*padding: 40px;*/
+	background-color: #f8ff7f;
+}
+
+.title {
+	font-family: 'Libre Baskerville', serif;
+	padding: 10px;
+	text-align: center;
+	font-size: 50px;
+}
