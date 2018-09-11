@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
   $(".add-text-btn").on("click", function(){
-
+    console.log('hi');
     // store values
     let inputKey = $(".user-input-title").val();
     let inputValue = $(".user-input-body").val();
@@ -14,10 +14,14 @@ $(document).ready(function() {
     console.log(inputKey, inputValue);
 
     localStorage.setItem(inputKey, inputValue);
-    // data-
-    let itemHtml = '<div class="display-item" data-storage-key="'+inputKey+'"> ' + inputKey + ' ' +  localStorage.getItem(inputKey) + '</div>';
-    $(".display").html(itemHtml);
-    //console.log(localStorage);
+    
+    //create a button for each category
+    let categoryButton = $('<button class="category" data-name="' + inputKey + '">' + inputKey + '</button>');
+    $(".button-drop").append(categoryButton)
+
+    // let itemHtml = '<div class="display-item" data-storage-key="'+inputKey+'"> ' + inputKey + ' ' +  localStorage.getItem(inputKey) + '</div>';
+    // $(".display").html(itemHtml);
+    console.log(localStorage);
     // how can we delegate this event to the outer html node?
     // https://learn.jquery.com/events/event-delegation/
 
@@ -45,7 +49,7 @@ $(document).ready(function() {
    // });
 
    $(".del-text-btn").on("click", function() {
-     alert('item deleted? check the console'); // maybe change to a window.confirm
+     window.confirm('Delete item?'); // maybe change to a window.confirm
      localStorage.removeItem( $('.user-input-title').val() ); // grab the title and plop here
      $(".user-input-title").val("");
      $(".user-input-body").val("");
