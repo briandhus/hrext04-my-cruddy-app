@@ -1,19 +1,40 @@
 body {
-	background-image: url('../images/background-pattern.png');
+	/*background-image: url('../images/background-pattern.png');*/
+	background-color: #0041aa;
 }
 
 .container {
+	/*display: flex;*/
 	width: 80%;
 	height: 90%;
 	border: solid 1px grey;
 	margin: 40px auto;
 	/*padding: 40px;*/
 	background-color: #f8ff7f;
+	padding: 1em;
+	/*position: absolute;*/
 }
 
 .title {
 	font-family: 'Libre Baskerville', serif;
-	padding: 10px;
+	margin: .5em;
+	padding-top: .5em;
 	text-align: center;
 	font-size: 50px;
+	color: white;
+	display: block;
+}
+
+.button-drop {
+	display: flex;
+	justify-content: center;
+}
+
+.inputs {
+	display: block;
+	/*display: flex;
+	justify-content: center;*/
+	width: 60%;
+	padding-top: 1em;
+	margin: 1em;
 }
