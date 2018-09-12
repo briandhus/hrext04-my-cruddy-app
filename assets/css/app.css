@@ -4,7 +4,7 @@ body {
 
 .header {
 	background-color: #0041aa;
-	padding: 2em 0;
+	padding: 1em 0;
 }
 
 .container {
@@ -22,9 +22,9 @@ body {
 .title {
 	font-family: 'Libre Baskerville', serif;
 	margin: .5em;
-	padding-top: .5em;
+	/*padding-top: .5em;*/
 	text-align: center;
-	font-size: 50px;
+	font-size: 44px;
 	color: white;
 	display: block;
 }
@@ -32,6 +32,7 @@ body {
 .button-drop {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .inputs {
@@ -52,10 +53,13 @@ body {
 }
 
 .category {
+	background-color: #0acbce;
+	color: black;
 	font-size: 16px;
 	border-radius: 8px;
 	border: 2px outset;
 	margin-right: .5em;
+	margin-bottom: .5em;
 	font-family: 'Merriweather', serif;
 	/*box-shadow: 1px 1px 1px #350e0e;*/
 }
