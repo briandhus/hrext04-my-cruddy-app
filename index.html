@@ -5,7 +5,7 @@
     <title>My First CRUD App</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Mukta+Malar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather" rel="stylesheet">
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -15,19 +15,21 @@
   </head>
   <body>
 
-    <h1 class="title">DoIt.Now</h1>
+    <div class="header">
+      <h1 class="title">Tasty Listicles</h1>
 
-    <div class="button-drop"></div>
+      <div class="button-drop"></div>
+    </div>
 
     <div class="container" align="center">
       
       <input type="text" class="user-input-title inputs" placeholder="Category">
       <input type="text" class="user-input-body inputs" placeholder="Item">
-      <button class="add-text-btn">add item</button>
-      <button class="del-text-btn">delete item</button>
+      <button class="add-text-btn input-button">add item</button>
+      <button class="del-text-btn input-button">delete item</button>
 
-      <div class="display"></div>
-
+      <!-- <div class="display"></div> -->
+      <ul class="display"></ul>
     </div>
 
   </body>
