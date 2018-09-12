@@ -1,6 +1,10 @@
 body {
-	/*background-image: url('../images/background-pattern.png');*/
+	background-image: url('../images/popsicles.jpeg');
+}
+
+.header {
 	background-color: #0041aa;
+	padding: 2em 0;
 }
 
 .container {
@@ -35,6 +39,23 @@ body {
 	/*display: flex;
 	justify-content: center;*/
 	width: 60%;
-	padding-top: 1em;
+	padding: .8em;
 	margin: 1em;
+	border-radius: 10px
+}
+
+.input-button {
+	font-size: 14px;
+	border-radius: 8px;
+	border: 2px outset;
+	font-family: 'Merriweather', serif;
+}
+
+.category {
+	font-size: 16px;
+	border-radius: 8px;
+	border: 2px outset;
+	margin-right: .5em;
+	font-family: 'Merriweather', serif;
+	/*box-shadow: 1px 1px 1px #350e0e;*/
 }
