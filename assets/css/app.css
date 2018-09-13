@@ -4,6 +4,7 @@ body {
 
 .header {
 	background-color: #0041aa;
+	opacity: 0.93;
 	padding: 1em 0;
 }
 
@@ -15,6 +16,7 @@ body {
 	margin: 40px auto;
 	/*padding: 40px;*/
 	background-color: #f8ff7f;
+	opacity: 0.95;
 	padding: 1em;
 	/*position: absolute;*/
 }
@@ -35,8 +37,12 @@ body {
 	flex-wrap: wrap;
 }
 
+label {
+	font-size: 20px;
+}
+
 .inputs {
-	display: block;
+	/*display: block;*/
 	/*display: flex;
 	justify-content: center;*/
 	width: 60%;
@@ -63,3 +69,13 @@ body {
 	font-family: 'Merriweather', serif;
 	/*box-shadow: 1px 1px 1px #350e0e;*/
 }
+
+.display-item {
+	font-size: 25px;
+}
+
+.display-category {
+	color: blue;
+	font-size: 33px;
+}
+
