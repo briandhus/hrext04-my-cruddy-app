@@ -16,28 +16,31 @@
   <body>
 
     <div class="header">
-      <h1 class="title">Tasty Listicles</h1>
+      <h1 class="title">Strawberry Listicles</h1>
 
       <div class="button-drop"></div>
     </div>
 
     <div class="container" align="center">
       
-      <section class="new-list">
+      <form>
         <!-- <label for="add-text-btn">Enter list name and click create to make a new list or click a button above for a saved list.</label><br> -->
-        <button class="add-list-btn input-button">New List</button>
+        <!-- <button class="add-list-btn input-button">New List</button> -->
+        <!-- add required to input below? Get rid of button above? Add label for input? -->
+        <label for="user-input-title" id="category-label">List name:</label>
         <input type="text" class="user-input-title inputs" placeholder="List Name"><br>
         <!-- <label for="user-input-body">Enter new list item for chosen list</label><br> -->
-        <button class="add-text-btn input-button">Add Item</button>
-        <input type="text" class="user-input-body inputs" placeholder="Item">
-      </section>
+        <!-- <button class="add-text-btn input-button">Add Item</button> -->
+        <label for="user-input-title" id="item-label">Item name:</label>
+        <input type="text" class="user-input-body inputs" placeholder="Item"><br>
+        <button class="add-text-btn input-button">save list</button>
+        <button class="del-text-btn input-button">delete list</button>
+      </form>
 
-      
-      
-      <!-- <button class="del-text-btn input-button">delete item</button> -->
+      <div class="display"></div>
 
-      <!-- <div class="display"></div> -->
-      <ul class="display"></ul>
+      <ul></ul>
+
     </div>
 
   </body>
